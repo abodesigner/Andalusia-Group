@@ -52,10 +52,26 @@ $(document).ready(function () {
   });
 
   img3.addEventListener("click", function (e) {
+    content3.classList.add("current");
+    content1.classList.remove("current");
+    content2.classList.remove("current");
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "block";
+
+    e.preventDefault();
+  });
+
+  img4.addEventListener("click", function (e) {
+    content4.classList.add("current");
+    content1.classList.remove("current");
+    content2.classList.remove("current");
     content3.classList.remove("current");
-    content1.classList.add("hidden");
-    content2.style.display = "block";
-    content2.style.display = "block";
+
+    content1.style.display = "none";
+    content2.style.display = "none";
+    content3.style.display = "none";
+    content4.style.display = "block";
 
     e.preventDefault();
   });
