@@ -10,10 +10,7 @@
 }
 
 /* GLOBAL STYLES */
-.left-side{
-  display: none;
-}
-.current{
+.active{
   display: block;
 }
 
@@ -21,9 +18,7 @@
   display: none;
 }
 
-#content2{
-  display: none;
-}
+
 
 a{
   color: #AEB0AB

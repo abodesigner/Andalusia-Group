@@ -31,6 +31,7 @@ $(document).ready(function () {
   let img4 = document.getElementById('image4');
 
 
+  let wrapper = document.getElementById("wrapper");
   let content1 = document.getElementById("content1");
   let content2 = document.getElementById("content2");
   let content3 = document.getElementById("content3");
@@ -38,40 +39,120 @@ $(document).ready(function () {
 
 
   img1.addEventListener("click", function (e) {
-    content1.classList.add("current");
-    content1.classList.remove("hidden");
-    content2.style.display = "none";
+
+
+    if (content1.classList.contains('hidden')) {
+
+      content1.classList.remove("hidden");
+      content1.classList.add("active");
+
+      wrapper.classList.remove("active");
+      wrapper.classList.add("hidden");
+
+      content2.classList.add("hidden");
+      content2.classList.remove("active");
+
+      content3.classList.add("hidden");
+      content3.classList.remove("active");
+
+      content4.classList.add("hidden");
+      content4.classList.remove("active");
+
+    }
+
     e.preventDefault();
   });
 
   img2.addEventListener("click", function (e) {
-    content1.classList.remove("current");
-    content1.classList.add("hidden");
-    content2.style.display = "block";
+    // content1.classList.remove("active");
+    // content1.classList.add("hidden");
+
+    if (content2.classList.contains('hidden')) {
+
+      content2.classList.remove("hidden");
+      content2.classList.add("active");
+
+      wrapper.classList.remove("active");
+      wrapper.classList.add("hidden");
+
+      content1.classList.add("hidden");
+      content1.classList.remove("active");
+
+      content3.classList.add("hidden");
+      content3.classList.remove("active");
+
+      content4.classList.add("hidden");
+      content4.classList.remove("active");
+    }
     e.preventDefault();
   });
 
   img3.addEventListener("click", function (e) {
-    content3.classList.add("current");
-    content1.classList.remove("current");
-    content2.classList.remove("current");
-    content1.style.display = "none";
-    content2.style.display = "none";
-    content3.style.display = "block";
+
+    // content1.classList.remove("active");
+    // content1.classList.add("hidden");
+
+    // content2.classList.remove("active");
+    // content2.classList.add("hidden");
+
+    // content4.classList.remove("active");
+
+
+
+    if (content3.classList.contains('hidden')) {
+
+      content3.classList.remove("hidden");
+      content3.classList.add("active");
+
+      wrapper.classList.remove("active");
+      wrapper.classList.add("hidden");
+
+      content1.classList.add("hidden");
+      content1.classList.remove("active");
+
+      content2.classList.add("hidden");
+      content2.classList.remove("active");
+
+      content4.classList.add("hidden");
+      content4.classList.remove("active");
+    }
+
 
     e.preventDefault();
   });
 
   img4.addEventListener("click", function (e) {
-    content4.classList.add("current");
-    content1.classList.remove("current");
-    content2.classList.remove("current");
-    content3.classList.remove("current");
 
-    content1.style.display = "none";
-    content2.style.display = "none";
-    content3.style.display = "none";
-    content4.style.display = "block";
+    // content1.classList.remove("active");
+    // content1.classList.add("hidden");
+
+    // content2.classList.remove("active");
+    // content2.classList.add("hidden");
+
+    // content3.classList.remove("active");
+    // content3.classList.add("hidden");
+
+    if (content4.classList.contains('hidden')) {
+
+      content4.classList.remove("hidden");
+      content4.classList.add("active");
+
+      wrapper.classList.remove("active");
+      wrapper.classList.add("hidden");
+
+      content1.classList.add("hidden");
+      content1.classList.remove("active");
+
+      content2.classList.add("hidden");
+      content2.classList.remove("active");
+
+      content3.classList.add("hidden");
+      content3.classList.remove("active");
+    }
+
+
+
+
 
     e.preventDefault();
   });
