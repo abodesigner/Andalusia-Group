@@ -16,9 +16,37 @@ h1,h2,h3,h4,h5,h6,a,p{
     flex-direction: row-reverse !important;
 }
 
+.navbar .navbar-nav .nav-item .nav-link{
 
 
-/* START CONTACT US */
-.contact-form input, .contact-form textarea{
-    text-align: end;
+    font-family: 'tagwal';
+}
+
+/* Start Overview */
+.overview-section p{
+    text-align: right;
+}
+
+/* Start Slider */
+#main-slider .carousel-caption{
+    text-align: right;
+}
+
+/* Start News */
+.news-section h5{
+    text-align: right;
+}
+
+/* Start Executive */
+.excutives-section .left-side .card-body{
+    text-align: right;
+}
+
+.news-section .card-text{
+    text-align: right;
+}
+
+/* Start Footer */
+.footer h5, .footer h3{
+    text-align: right;
 }

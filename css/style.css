@@ -55,10 +55,8 @@ ul li{
 
 /* Start Home Section */
 .home-section{
-  height: 100vh;
   position: relative;
   overflow: hidden;
-
 }
 
 /* START NAVBAR */
@@ -79,6 +77,10 @@ ul li{
 }
 
 /* START SLIDER */
+.main-slider{
+  max-height: calc( 100vh - 60px);
+  overflow: hidden;
+}
 .main-slider .carousel-caption {
     width: 45%;
     position: absolute;
@@ -166,6 +168,11 @@ ul li{
 
 .statistics-section h2:after{
   margin-bottom: 74px;
+}
+.counter{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+
 }
 /* End Statistices Section */
 

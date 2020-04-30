@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8" />
@@ -35,6 +35,9 @@
     <!-- custom style -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- custom arabic style -->
+    <link rel="stylesheet" href="css/style-ar.css" />
+
     <!-- media file for custom resopnsive -->
     <link rel="stylesheet" href="css/media.css" />
 </head>
@@ -46,55 +49,56 @@
         <!-- START NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light py-0">
 
-            <a href="" class="navbar-brand">
-                <img src="img/andalusia-logo.png" alt="Andalusia Logo" class="img-fluid">
-            </a>
+
             <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="main-navbar">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a href="#main-slider" class="nav-link">Home</a>
+                        <a href="#main-slider" class="nav-link">الرئيسية</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#aboutus" class="nav-link" data-toggle="dropdown">About Us</a>
+                        <a href="#aboutus" class="nav-link" data-toggle="dropdown">عن الشركة</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Our Company</a>
-                            <a class="dropdown-item" href="#">Partners & Accreditations</a>
-                            <a class="dropdown-item" href="#">Corporate Structure</a>
+                            <a class="dropdown-item" href="#">شركتنا</a>
+                            <a class="dropdown-item" href="#">الشركاء والاعتمادات</a>
+                            <a class="dropdown-item" href="#">هيكل الشركة</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#sbusiness" class="nav-link">Business Units</a>
+                        <a href="#sbusiness" class="nav-link">وحدات العمل</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#wprojects" class="nav-link">Projects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#partners" class="nav-link">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" target="_blank">Media & Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contacts</a>
+                        <a href="#wprojects" class="nav-link">المشاريع</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#careers" class="nav-link">Careers</a>
+                        <a href="#partners" class="nav-link">الشركاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" target="_blank">وسائل الإعلام والأحداث</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">اتصل بنا</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#careers" class="nav-link mr-auto">الوظائف</a>
                     </li>
                     <li class="nav-item ml-4">
                         <a href="#" class="nav-link"><img src="img/search-icon.png" alt="Search Icon"></a>
                     </li>
                     <li class="nav-item">
-                        <a href="index-ar.html" class="nav-link" target="_self">
-                            <img src="img/AR.png" alt="ARABIC">
+                        <a href="index.html" class="nav-link" target="_self">
+                            <img src="img/EN.png" alt="english">
                         </a>
                     </li>
                 </ul>
             </div>
+            <a href="" class="navbar-brand">
+                <img src="img/andalusia-logo.png" alt="Andalusia Logo" class="img-fluid">
+            </a>
 
         </nav>
 
@@ -105,12 +109,11 @@
 
                     <img src="img/main-slide.png" class="d-block w-100" alt="Slider One">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="mb-5">We are growing fast <br>do you see.</h1>
-                        <p class="lead mb-4">Preserved defective offending he daughters on or. Rejoiced prospect yet
-                            material servants out
-                            answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all
-                            answer the nearer yet length. </p>
-                        <button class="btn btn-danger">learn more</button>
+                        <h1 class="mb-5">نحن ننمو بسرعة <br>هل ترى.</h1>
+                        <p class="lead mb-4">لإساءة المعيبة المخالفة بناته على أو. ابتهج المحتملين بعد أجاب الخدم المواد
+                            من الرجال اعترف. ساد اليقين الرياضيين صباحا كما يشتبه. إضافة سلالم معجبة بكل إجابة كلما
+                            اقترب طولها. </p>
+                        <button class="btn btn-danger"> المزيد</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -129,36 +132,39 @@
 
     <!-- Start Services Section -->
     <div class="services-section py-5">
-        <h2 class="text-uppercase text-center">our services</h2>
+        <h2 class="text-uppercase text-center">خدماتنا</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="service-block text-center">
                         <img src="img/s1.png" alt="service one" class="img-fluid mb-4">
-                        <h4 class="text-capitalize">service one</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est consequuntur, voluptatem sit
-                            praesentium accusamus delectus!</p>
+                        <h4 class="text-capitalize">الخدمة الاولى</h4>
+                        <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
+                            إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                            عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أ</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-block text-center">
                         <img src="img/s2.png" alt="service two" class="img-fluid mb-4">
-                        <h4 class="text-capitalize">service two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est consequuntur, voluptatem sit
-                            praesentium accusamus delectus!</p>
+                        <h4 class="text-capitalize">الخدمة الثانية</h4>
+                        <p>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
+                            إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                            عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أ</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service-block text-center">
                         <img src="img/s3.png" alt="service three" class="img-fluid mb-4">
-                        <h4 class="text-capitalize">service three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est consequuntur, voluptatem sit
-                            praesentium accusamus delectus!</p>
+                        <h4 class="text-capitalize">الخدمة الثالثة</h4>
+                        <p>s!هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
+                            إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                            عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أ</p>
                     </div>
                 </div>
             </div>
             <div class="view-button text-center mt-5">
-                <button class="btn btn-outline-secondary text-uppercase btn-lg">view all services</button>
+                <button class="btn btn-outline-secondary text-uppercase btn-lg">كل الخدمات</button>
             </div>
         </div>
     </div>
@@ -167,28 +173,29 @@
     <!-- Start Overview Section -->
     <div class="overview-section py-5 text-white">
         <div class="container">
-            <h2 class="text-uppercase text-center">Our Overview</h2>
-            <p class="lead">Andalusia is one of the leading regional players in the healthcare provision space in the
-                Middle
-                East. With a network of general hospitals, specialized medical centers, and polyclinics across Egypt and
-                Saudi Arabia, Andalusia has built a unique footprint both in service spectrum and geographically.
-                Andalusia
-                Group for Medical Services was founded in 1984 by the entrepreneur Dr. Darweesh Zagzoug as a single
-                hospital
-                in Jeddah, Saudi Arabia; and grown over 30 years to own and manage several healthcare facilities in both
-                Saudi and Egypt. The second generation family owner Dr. Hazem Zagzoug, the current CEO has made it
-                possible
-                for a renowned financial institution like the IFC to join forces to serve more than 7 million patients
-                in
-                the last 10 years with amicable quality, and creating 2000 new jobs. We are proud of our origin, our
-                progress, as well as our partners. </p>
+            <h2 class="text-uppercase text-center">رؤيتنا</h2>
+            <p class="lead">الأندلس هي واحدة من الشركات الإقليمية الرائدة في مجال توفير الرعاية الصحية في
+                                الأوسط
+                                الشرق. مع شبكة من المستشفيات العامة والمراكز الطبية المتخصصة والعيادات الشاملة في جميع
+                أنحاء مصر
+                                المملكة العربية السعودية ، بنت الأندلس بصمة فريدة في كل من طيف الخدمة والجغرافيا.
+                                الأندلس
+                                تأسست مجموعة للخدمات الطبية في عام 1984 من قبل رجل الأعمال الدكتور درويش زقزوق كمفرد
+                                مستشفى
+                                في جدة ، المملكة العربية السعودية ؛ ونمت على مدى 30 عامًا لامتلاك وإدارة العديد من مرافق
+                الرعاية الصحية في كليهما
+                                السعودية ومصر. مالك عائلة الجيل الثاني د. حازم زقزوق ، الرئيس التنفيذي الحالي
+                                ممكن
+                                لمؤسسة مالية مشهورة مثل مؤسسة التمويل الدولية لتوحيد قواها لخدمة أكثر من 7 ملايين مريض
+                                في
+                                السنوات العشر الماضية بجودة ودية ، وخلق 2000 وظيفة جديدة. نحن فخورون بأصلنا</p>
         </div>
     </div>
     <!-- End Overview Section -->
 
     <!-- Start Executives Section -->
     <div class="excutives-section py-5">
-        <h2 class="text-capitalize text-center">executives officers</h2>
+        <h2 class="text-capitalize text-center">المديرين التنفيذين</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -196,12 +203,13 @@
                         <div class="card">
                             <img class="card-img-top img-thumbnail" src="img/chef.png" alt="Chef image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Hazem Darwiesh</h5>
-                                <h6 class="card-subtitle mb-2 text-danger mb-4">Chief Executive Officer</h6>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
-                                    reiciendis distinctio error id quas sapiente?</p>
+                                <h5 class="card-title">حازم درويش</h5>
+                                <h6 class="card-subtitle mb-2 text-danger mb-4">الرئيس التنفيذى</h6>
+                                <p class="card-text">ستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                                    المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+                                    الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمث</p>
                                 <hr>
-                                <div class="social-links d-flex justify-content-start">
+                                <div class="social-links d-flex justify-content-end">
                                     <a href="#" class="fb p-2">
                                         <i class="fab fa-facebook-square fa-2x"></i>
                                     </a>
@@ -225,12 +233,13 @@
                         <div class="card">
                             <img class="card-img-top" src="img/manager_1.png" alt="Chef image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Alaa Lotfy</h5>
+                                <h5 class="card-title">علاء لطفى </h5>
                                 <h6 class="card-subtitle mb-2 text-danger mb-4">Digital Marketing Officer</h6>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
-                                    reiciendis distinctio </p>
+                                <p class="card-text">ستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                                    المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+                                    الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمث</p>
                                 <hr>
-                                <div class="social-links d-flex justify-content-start">
+                                <div class="social-links d-flex justify-content-end">
                                     <a href="#" class="fb p-2">
                                         <i class="fab fa-facebook-square fa-2x"></i>
                                     </a>
@@ -254,12 +263,13 @@
                         <div class="card">
                             <img class="card-img-top" src="img/manager_2.png" alt="Chef image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Mohsen Ragab</h5>
-                                <h6 class="card-subtitle mb-2 text-danger mb-4">Team Leader</h6>
-                                <p class="card-text">Lorem ipsum dolor, adipisicing elit. Unde
-                                    reiciendis distinctio error id quas sapiente?</p>
+                                <h5 class="card-title"> محسن رجب</h5>
+                                <h6 class="card-subtitle mb-2 text-danger mb-4"> الرئيس التنفيذى</h6>
+                                <p class="card-text">ستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                                    المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+                                    الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمث</p>
                                 <hr>
-                                <div class="social-links d-flex justify-content-start">
+                                <div class="social-links d-flex justify-content-end">
                                     <a href="#" class="fb p-2">
                                         <i class="fab fa-facebook-square fa-2x"></i>
                                     </a>
@@ -283,12 +293,13 @@
                         <div class="card">
                             <img class="card-img-top" src="img/manager_3.png" alt="Chef image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Eslam Ali</h5>
-                                <h6 class="card-subtitle mb-2 text-danger mb-4">DevOps Engeineer</h6>
-                                <p class="card-text">Lorem , sit amet consectetur adipisicing elit. Unde
-                                    reiciendis distinctio error id quas sapiente?</p>
+                                <h5 class="card-title"> إسلام على</h5>
+                                <h6 class="card-subtitle mb-2 text-danger mb-4">الرئيس التنفيذى </h6>
+                                <p class="card-text">ستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                                    المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+                                    الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمث</p>
                                 <hr>
-                                <div class="social-links d-flex justify-content-start">
+                                <div class="social-links d-flex justify-content-end">
                                     <a href="#" class="fb p-2">
                                         <i class="fab fa-facebook-square fa-2x"></i>
                                     </a>
@@ -312,12 +323,13 @@
                         <div class="card">
                             <img class="card-img-top" src="img/manager_4.png" alt="Chef image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Ayman Adel</h5>
-                                <h6 class="card-subtitle mb-2 text-danger mb-4">Sysytem Anaylst Engeineer</h6>
-                                <p class="card-text">Lorem ipsum dolor, Unde
-                                    reiciendis distinctio error id quas sapiente?</p>
+                                <h5 class="card-title">أيمن عادل</h5>
+                                <h6 class="card-subtitle mb-2 text-danger mb-4">الرئيس التنفيذى</h6>
+                                <p class="card-text">ستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                                    المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+                                    الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمث</p>
                                 <hr>
-                                <div class="social-links d-flex justify-content-start">
+                                <div class="social-links d-flex justify-content-end">
                                     <a href="#" class="fb p-2">
                                         <i class="fab fa-facebook-square fa-2x"></i>
                                     </a>
@@ -363,21 +375,21 @@
 
     <!-- Start Statistics Section -->
     <div class="statistics-section py-5 text-white">
-        <h2 class="text-uppercase text-center">statistics</h2>
+        <h2 class="text-uppercase text-center">الاحصائيات</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <div class="statistic-block text-center">
                         <img src="img/stuff.png" alt="staff icon" class="p-3 border border-secondary rounded mb-4">
                         <div class="counter" data-target="60000">0</div>
-                        <h5>Client Services</h5>
+                        <h5>خدمة العملاء</h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="statistic-block text-center">
                         <img src="img/machine.png" alt="machine icon" class="p-3 border border-secondary rounded mb-4">
                         <div class="counter" data-target="15000">0</div>
-                        <h5>Machines</h5>
+                        <h5>الات</h5>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -385,14 +397,14 @@
                         <img src="img/qualified.png" alt="users icon" class="p-3 border border-secondary rounded"
                             style="margin-bottom: 35px;">
                         <div class="counter" data-target="9000">0</div>
-                        <h5>Qualified Staff</h5>
+                        <h5> العمالة المدربة</h5>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="statistic-block text-center">
                         <img src="img/sites.png" alt="site icon" class="p-3 border border-secondary rounded mb-4">
                         <div class="counter" data-target="7000">0</div>
-                        <h5>Sites</h5>
+                        <h5>المواقع</h5>
                     </div>
                 </div>
             </div>
@@ -402,19 +414,19 @@
 
     <!-- Start Recent News -->
     <div class="news-section py-5">
-        <h2 class="text-uppercase text-center">recent news</h2>
+        <h2 class="text-uppercase text-center">أخبار حدبثة</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top mb-4" src="img/post1.png" alt="Post One">
-                            <h5 class="card-title text-capitalize">how to improve your sales volume</h5>
+                            <h5 class="card-title text-capitalize">كيفية تحسين حجم مبيعاتك</h5>
                             <span class="date text-muted d-block">23 AUG, 2020</span>
-                            <div class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                                aperiam
-                                ipsa reprehenderit, explicabo minima odit.</div>
-                            <a href="#" class="btn btn-danger" role="button"> Read more</a>
+                            <div class="card-text mb-3">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
+                                يقرأها.</div>
+                            <a href="#" class="btn btn-danger" role="button"> المزيد</a>
                         </div>
                     </div>
                 </div>
@@ -423,12 +435,12 @@
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top mb-4" src="img/post2.png" alt="Post Two">
-                            <h5 class="card-title text-capitalize">how to improve your sales volume</h5>
+                            <h5 class="card-title text-capitalize">كيفية تحسين حجم مبيعاتك</h5>
                             <span class="date text-muted d-block">23 AUG, 2020</span>
-                            <div class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                                aperiam
-                                ipsa reprehenderit, explicabo minima odit.</div>
-                            <a href="#" class="btn btn-danger" role="button"> Read more</a>
+                            <div class="card-text mb-3">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
+                                يقرأها.</div>
+                            <a href="#" class="btn btn-danger" role="button">المزيد</a>
                         </div>
                     </div>
                 </div>
@@ -437,12 +449,12 @@
                     <div class="card">
                         <div class="card-body">
                             <img class="card-img-top mb-4" src="img/post1.png" alt="Post Three">
-                            <h5 class="card-title text-capitalize">how to improve your sales volume</h5>
+                            <h5 class="card-title text-capitalize">كيفية تحسين حجم مبيعاتك</h5>
                             <span class="date text-muted d-block">23 AUG, 2020</span>
-                            <div class="card-text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                                aperiam
-                                ipsa reprehenderit, explicabo minima odit.</div>
-                            <a href="#" class="btn btn-danger" role="button"> Read more</a>
+                            <div class="card-text mb-3">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
+                                يقرأها.</div>
+                            <a href="#" class="btn btn-danger" role="button"> المزيد</a>
                         </div>
                     </div>
                 </div>
@@ -454,7 +466,7 @@
 
     <!-- Start Great Partners -->
     <div class="partners-section py-5">
-        <h2 class="text-uppercase text-center text-white">great partners</h2>
+        <h2 class="text-uppercase text-center text-white">شركاء عظماء</h2>
         <div class="container">
             <div class="our-partners">
                 <div class="partner-block mx-2">
@@ -495,44 +507,44 @@
     <!-- Start Footer Section -->
     <footer class="footer py-5">
         <div class="container">
-            <h3 class="text-capitalize text-white mb-5">explore more</h3>
+            <h3 class="text-capitalize text-white mb-5">إكتشف اكثر</h3>
             <hr style="color:#ddd">
             <div class="wrapper d-flex justify-content-between">
                 <div class="quick-link d-flex flex-column">
-                    <h5 class="text-uppercase my-4 text-white">quick links</h5>
+                    <h5 class="text-uppercase my-4 text-white">روابط سريعة</h5>
                     <ul class="unstyled-list">
-                        <li class="item"><a href="#" class="text-uppercase">home</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">about us</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">careeres</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">events</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">news</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">contact</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الرئيسية</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">عن الشركة</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الوظائف</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الاحداث</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الاخبار</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="quick-link d-flex flex-column">
-                    <h5 class="text-uppercase my-4 text-white">quick links</h5>
+                    <h5 class="text-uppercase my-4 text-white">روابط سريعة </h5>
                     <ul class="unstyled-list">
-                        <li class="item"><a href="#" class="text-uppercase">home</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">about us</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">careeres</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">events</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">news</a></li>
-                        <li class="item"><a href="#" class="text-uppercase">contact</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الرئيسية</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">عن الشركة</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الوظائف</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الاحداث</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">الاخبار</a></li>
+                        <li class="item"><a href="#" class="text-uppercase">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="news-letter d-flex flex-column w-50">
-                    <h5 class="text-uppercase my-4 text-white">news letter</h5>
+                    <h5 class="text-uppercase my-4 text-white">القائمة البريدية</h5>
                     <div class="search-box flex-grow-1">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="email address">
+                            <input type="text" class="form-control" placeholder="الايميل">
                             <div class="input-group-append">
-                                <span class="input-group-text text-uppercase" id="basic-addon2">subscribe</span>
+                                <span class="input-group-text text-uppercase" id="basic-addon2">اشترك</span>
                             </div>
                         </div>
 
                     </div>
                     <p class="copyright text-white">
-                        COPYRIGHT &copy; <span id="year"></span> - ANDALUSIA GROUP
+                        الحقوق محفوظة &copy; <span id="year"></span> - مجموعة اندلوسيا
                     </p>
                 </div>
             </div>

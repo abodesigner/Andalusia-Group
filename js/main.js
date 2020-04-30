@@ -3,6 +3,10 @@ $(document).ready(function () {
   let date = new Date();
   $("#year").text(date.getFullYear());
 
+  $('#main-slider').carousel({
+    interval: 800
+  })
+
   // smooth scroll
   // $("a[href^='#']").on("click", function (e) {
   //   e.preventDefault();
@@ -19,23 +23,23 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 500
   });
 
   /**
-   * Executives Mangaer Part
+   * Executives Mangaers Section
    */
-  let img1 = document.getElementById('image1');
-  let img2 = document.getElementById('image2');
-  let img3 = document.getElementById('image3');
-  let img4 = document.getElementById('image4');
+  let img1 = document.getElementById('image1'),
+    img2 = document.getElementById('image2'),
+    img3 = document.getElementById('image3'),
+    img4 = document.getElementById('image4');
 
 
-  let wrapper = document.getElementById("wrapper");
-  let content1 = document.getElementById("content1");
-  let content2 = document.getElementById("content2");
-  let content3 = document.getElementById("content3");
-  let content4 = document.getElementById("content4");
+  let wrapper = document.getElementById("wrapper"),
+    content1 = document.getElementById("content1"),
+    content2 = document.getElementById("content2"),
+    content3 = document.getElementById("content3"),
+    content4 = document.getElementById("content4");
 
 
   img1.addEventListener("click", function (e) {
@@ -64,8 +68,6 @@ $(document).ready(function () {
   });
 
   img2.addEventListener("click", function (e) {
-    // content1.classList.remove("active");
-    // content1.classList.add("hidden");
 
     if (content2.classList.contains('hidden')) {
 
@@ -88,16 +90,6 @@ $(document).ready(function () {
   });
 
   img3.addEventListener("click", function (e) {
-
-    // content1.classList.remove("active");
-    // content1.classList.add("hidden");
-
-    // content2.classList.remove("active");
-    // content2.classList.add("hidden");
-
-    // content4.classList.remove("active");
-
-
 
     if (content3.classList.contains('hidden')) {
 
@@ -123,15 +115,6 @@ $(document).ready(function () {
 
   img4.addEventListener("click", function (e) {
 
-    // content1.classList.remove("active");
-    // content1.classList.add("hidden");
-
-    // content2.classList.remove("active");
-    // content2.classList.add("hidden");
-
-    // content3.classList.remove("active");
-    // content3.classList.add("hidden");
-
     if (content4.classList.contains('hidden')) {
 
       content4.classList.remove("hidden");
@@ -150,12 +133,40 @@ $(document).ready(function () {
       content3.classList.remove("active");
     }
 
-
-
-
-
     e.preventDefault();
   });
+
+  /**
+   * JS Counter in statistics Section
+   */
+
+  const counters = document.querySelectorAll(".counter");
+  const speed = 200;
+
+  counters.forEach(counter => {
+
+    const updateCounter = () => {
+      const target = Number.parseInt(counter.getAttribute('data-target'));
+
+      const count = Number.parseInt(counter.innerText);
+
+      const inc = target / speed;
+
+      if (count < target) {
+
+        counter.innerText = count + inc;
+
+        setTimeout(updateCounter, 1);
+
+      } else {
+
+        count.innerText = target;
+      }
+
+    }
+
+    updateCounter();
+  })
 
 
 
