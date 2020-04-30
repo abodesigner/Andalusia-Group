@@ -4,7 +4,7 @@ $(document).ready(function () {
   $("#year").text(date.getFullYear());
 
   $('#main-slider').carousel({
-    interval: 800
+    interval: 1000
   })
 
   // smooth scroll
