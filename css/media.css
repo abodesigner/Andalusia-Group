@@ -7,7 +7,9 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
-
+    .statistic-block ..statistics-section{
+        margin-bottom: 40px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
